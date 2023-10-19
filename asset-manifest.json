@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/jobot/static/css/main.098a8ab2.css",
+    "main.js": "/jobot/static/js/main.f4f42749.js",
+    "static/media/arthur.png": "/jobot/static/media/arthur.8b3822fcfd1860fd5522.png",
+    "static/media/marie.png": "/jobot/static/media/marie.4fc17b27268de5ca09d9.png",
+    "static/media/jonathan.png": "/jobot/static/media/jonathan.42c8298d08d90a175d87.png",
+    "static/media/home_illustration.png": "/jobot/static/media/home_illustration.5256d0f6ddb35274804d.png",
+    "static/media/panel_illustration.png": "/jobot/static/media/panel_illustration.256f09e655425c2d3ad7.png",
+    "static/media/steps_illustration.png": "/jobot/static/media/steps_illustration.4dddcca787861352ebab.png",
+    "static/media/neoma_logo.png": "/jobot/static/media/neoma_logo.e0f87fe7176e25f38025.png",
+    "index.html": "/jobot/index.html",
+    "main.098a8ab2.css.map": "/jobot/static/css/main.098a8ab2.css.map",
+    "main.f4f42749.js.map": "/jobot/static/js/main.f4f42749.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.098a8ab2.css",
+    "static/js/main.f4f42749.js"
+  ]
+}
