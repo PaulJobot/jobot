@@ -1,0 +1,30 @@
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 75px 20%;
+}
+
+.panel h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.panel p {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #A6A6A6;
+}
+
+.panel img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .panel {
+        margin: 75px 5%;
+    }
+}

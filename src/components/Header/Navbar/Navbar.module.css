@@ -1,0 +1,181 @@
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+    font-size: 18px;
+}
+
+.navbar ul {
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar .links {
+  display: flex;
+  justify-content: center;
+}
+
+.links a {
+  color: #A6A6A6;
+}
+
+.links a:hover {
+  color: #555;
+}
+
+.links a:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 10px;
+  height: 4px;
+  width: 0%;
+  border-radius: 2px;
+  transition: width .5s;
+}
+
+.links a:hover:after {
+  width: 100%;
+  background-color: #555;
+}
+
+.navbar .login {
+  display: flex;
+  padding: 0;
+}
+
+.login li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  transition: .2s ease-out ;
+}
+
+.login a {
+  color: #fff;
+}
+
+.login li:nth-child(1) {
+  background-color: #62BC49;
+}
+
+.login li:nth-child(1):hover {
+  background-color: #95DE81;
+}
+
+.login li:nth-child(2) {
+  background-color: #6D71B5;
+}
+
+.login li:nth-child(2):hover {
+  background-color: #9C9FDA;
+}
+
+/* TOGGLE MENU */
+
+@media (max-width: 1000px) {
+
+  .buttonToggle {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .toggle {
+    width: 45px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #BCBCBC;
+    transition: .2s;
+  }
+
+  .toggle:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 35px;
+    height: 5px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #BCBCBC;
+    transition: .2s;
+  }
+
+  .toggle:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 12.5px;
+    height: 5px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #BCBCBC;
+    transition: .2s;
+  }
+
+  .closetoggle {
+    height: 0;
+  }
+
+  .closetoggle:after {
+    transform: rotate(45deg);
+  }
+
+  .closetoggle:before {
+    transform: rotate(-45deg);
+    top: 17px
+  }
+
+  .closenav {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 12vh;
+    left: 0;
+    flex-direction: column;
+    background-color: #FFF;
+    border-top: 2px solid #F3F3F3;
+    border-bottom: 2px solid #F3F3F3;
+
+  }
+
+  .links {
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .links li {
+    margin: 20px 0;
+  }
+
+  .login {
+    flex-direction: column;
+  }
+
+  .login li {
+    margin: 20px 0;
+  }
+
+}

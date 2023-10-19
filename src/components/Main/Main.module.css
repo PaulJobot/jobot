@@ -1,0 +1,167 @@
+/* PARAMETERS */
+
+.green {
+  color: #62BC49;
+}
+
+.purple {
+  color: #6D71B5;
+}
+
+/* MAIN */
+
+.Main {
+  display: flex;
+  width: 90%;
+  height: 88vh;
+  margin: 0 7.5%;
+  align-items: center;
+}
+
+/* MAIN LEFT */
+
+.Main .mainleft {
+  display: flex;
+  width: 50%;
+  margin-right: 7%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainleft h2 {
+  margin: 0;
+  font-size: 4.2vw;
+  font-weight: 400;
+  color: #555;
+}
+
+.mainleft p {
+  font-size: 22px;
+  color: #A6A6A6;
+  margin: 40px 0;
+}
+
+.mail {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  margin: 0;
+  border-radius: 46px;
+  border: 2px solid #D9D9D9;
+}
+
+.mail input {
+  width: 65%;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #555;
+  border: none;
+  outline: none;
+  border-radius: 46px 0 0 46px;
+}
+
+.mail input::placeholder {
+  color: #D9D9D9;
+}
+
+.mail button {
+  width: 35%;
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  background: #75CDD4;
+  color: #FFF;
+  border-radius: 46px;
+  border: none;
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: .2s ease-out
+}
+
+.mail button:hover {
+  background: #B4E3E7;
+}
+
+.btn_down {
+  display: flex;
+  height: 94px;
+  width: 94px;
+  margin: 80px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0);
+  border: 3px solid #D9D9D9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s ease-out
+}
+
+.arrow_down {
+  margin-top: 5px;
+  font-size: 44px;
+  color: #D9D9D9;
+  transition: .2s ease-out
+}
+
+.btn_down:hover {
+  border: 3px solid #555;
+}
+
+.btn_down:hover .arrow_down {
+  color: #555;
+}
+
+/* MAIN RIGHT */
+
+.Main .mainright {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.mainright img {
+  width: 85%;
+  height: 700px;
+  background: linear-gradient(90deg, #75CDD4 26.04%, #95DE81 100%);
+  border-radius: 350px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .Main {
+    height: auto;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .Main .mainleft, .Main .mainright {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .mainleft h2 {
+    font-size: 72px;
+  }
+
+  .mail button {
+    font-size: 14px;
+  }
+
+  .btn_down {
+    display: none;
+  }
+
+  .mainright img {
+    margin: 80px 0;
+  }
+
+}

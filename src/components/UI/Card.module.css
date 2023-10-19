@@ -1,0 +1,66 @@
+.card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 40px 20px 20px 20px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+
+.card_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.green .card_logo {
+    background: #95DE81;
+}
+
+.blue .card_logo {
+    background: #B4E3E7;
+}
+
+.purple .card_logo {
+    background: #9C9FDA;
+}
+
+.card_title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card_desc {
+    color: #A6A6A6;
+    font-size: 16px
+}
+
+.green a {
+    color: #62BC49;
+}
+
+.blue a {
+    color: #75CDD4;
+}
+
+.purple a {
+    color: #6D71B5;
+}
+
+@media (max-width: 1000px) {
+
+    .card {
+        width: auto;
+        margin: 50px 5%;
+    }
+
+}

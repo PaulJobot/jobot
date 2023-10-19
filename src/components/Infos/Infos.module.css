@@ -1,0 +1,27 @@
+.Infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos_title {
+    margin-top: 100px;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 0;
+}
+
+.cards {
+    display: flex;
+    margin: 100px 2.5%;
+}
+
+@media (max-width: 1000px) {
+
+    .cards {
+        flex-direction: column;
+        margin: 50px 2.5%;
+    }
+
+}

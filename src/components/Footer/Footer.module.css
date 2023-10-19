@@ -1,0 +1,27 @@
+.footer {
+    height: 350px;
+    padding: 0 5%;
+    background-color: #F3F3F3;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.desc img {
+    width: 150px;
+}
+
+.desc p {
+    color: #A6A6A6;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    border-top: 2px solid #D9D9D9;
+}
