@@ -35,19 +35,19 @@
 .slide div h2 {
     margin: 0;
     color: #6d71b5;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 .slide div h4 {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
 }
 
 .slide div p {
     margin: 10px 0;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .next_slide {

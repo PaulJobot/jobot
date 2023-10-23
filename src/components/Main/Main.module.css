@@ -30,13 +30,13 @@
 
 .mainleft h2 {
   margin: 0;
-  font-size: 4.2vw;
+  font-size: 4.8em;
   font-weight: 400;
   color: #555;
 }
 
 .mainleft p {
-  font-size: 22px;
+  font-size: 1.375em;
   color: #A6A6A6;
   margin: 40px 0;
 }
@@ -52,10 +52,10 @@
 }
 
 .mail input {
-  width: 65%;
+  width: 70%;
   height: 100%;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 1.125em;
   color: #555;
   border: none;
   outline: none;
@@ -67,10 +67,10 @@
 }
 
 .mail button {
-  width: 35%;
+  width: 30%;
   height: 100%;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.125em;
   background: #75CDD4;
   color: #FFF;
   border-radius: 46px;
@@ -100,7 +100,11 @@
 
 .arrow_down {
   margin-top: 5px;
-  font-size: 44px;
+  font-size: 2.75em;
+  transition: .2s ease-out
+}
+
+.arrow_down path {
   color: #D9D9D9;
   transition: .2s ease-out
 }
@@ -109,7 +113,7 @@
   border: 3px solid #555;
 }
 
-.btn_down:hover .arrow_down {
+.btn_down:hover .arrow_down path {
   color: #555;
 }
 
@@ -146,14 +150,6 @@
     width: 100%;
     margin: 0;
     justify-content: center;
-  }
-
-  .mainleft h2 {
-    font-size: 72px;
-  }
-
-  .mail button {
-    font-size: 14px;
   }
 
   .btn_down {

@@ -19,9 +19,28 @@
     color: #A6A6A6;
 }
 
+.links a {
+    margin: 0 9px;
+    transition: .2s ease-out ;
+}
+
+.links a:nth-child(1) {
+    margin-left: 0;
+}
+
+.links a:hover {
+    color: #A6A6A6;
+}
+
 .bottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 20%;
     border-top: 2px solid #D9D9D9;
+}
+
+.bottom .social_networks a {
+    margin: 0 8px;
+    font-size: 1.1em;
 }

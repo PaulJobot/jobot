@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import classes from './Card.module.css';
 
@@ -20,7 +19,7 @@ const Card = (props) => {
   return (
     <div className={`${classes.card} ${colorCard(props.color)}`}>
         <div>
-            <div className={classes.card_logo}><FontAwesomeIcon icon={props.logo} /></div>
+            <div className={classes.card_logo}>{props.logo}</div>
             <p className={classes.card_title}>{props.title}</p>
             <p className={classes.card_desc}>{props.desc}</p>
         </div>

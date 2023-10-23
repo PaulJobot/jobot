@@ -2,11 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Illustration from '../../assets/home_illustration.png';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
 
 import classes from './Main.module.css';
 
-const Main = () => {
+const Main = (props) => {
   return(
     <div className={classes.Main}>
       <div className={classes.mainleft}>
@@ -16,8 +16,8 @@ const Main = () => {
           <input type="text" placeholder="joe@jobot.fr" />
           <button>Trouver un job</button>
         </div>
-        <button className={classes.btn_down}>
-          <FontAwesomeIcon className={classes.arrow_down} icon={faAngleDown} />
+        <button className={classes.btn_down} onClick={props.scroll}>
+          <FontAwesomeIcon className={classes.arrow_down} icon={faArrowDownLong} />
         </button>
       </div>
       <div className={classes.mainright}>

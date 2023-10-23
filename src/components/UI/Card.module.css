@@ -15,9 +15,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 80px;
-    height: 80px;
-    top: -40px;
+    width: 100px;
+    height: 100px;
+    top: -60px;
+    font-size: 3em;
     border-radius: 10px;
     z-index: 1;
 }
@@ -26,22 +27,34 @@
     background: #95DE81;
 }
 
+.green .card_logo svg path {
+    color: #3F5E37;
+}
+
 .blue .card_logo {
     background: #B4E3E7;
+}
+
+.blue .card_logo svg path {
+    color: #526769;
 }
 
 .purple .card_logo {
     background: #9C9FDA;
 }
 
+.purple .card_logo svg path {
+    color: #404259;
+}
+
 .card_title {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 .card_desc {
     color: #A6A6A6;
-    font-size: 16px
+    font-size: 1em
 }
 
 .green a {

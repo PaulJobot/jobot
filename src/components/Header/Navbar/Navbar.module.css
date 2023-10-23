@@ -5,6 +5,7 @@ li {
 a {
   color: #000;
   text-decoration: none;
+  transition: .2s ease-out ;
 }
 
 .navbar {
@@ -13,7 +14,7 @@ a {
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .navbar ul {
