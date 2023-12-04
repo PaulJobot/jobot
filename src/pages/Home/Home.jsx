@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
-import Header from '../../Header/Header';
-import Main from '../../Main/Main';
-import Partners from '../../Slider/Partners';
-import Infos from '../../Infos/Infos';
-import Reviews from '../../Reviews/Reviews';
-import Steps from '../../Steps/Steps';
-import Newsletter from '../../Newsletter/Newsletter';
-import Panel from '../../Panel/Panel';
-import Footer from '../../Footer/Footer';
+import Header from '../../components/Header/Header';
+import Main from '../../components/Main/Main';
+import Partners from '../../components/Slider/Partners';
+import Infos from '../../components/Infos/Infos';
+import Reviews from '../../components/Reviews/Reviews';
+import Steps from '../../components/Steps/Steps';
+import Newsletter from '../../components/Newsletter/Newsletter';
+import Panel from '../../components/Panel/Panel';
+import Footer from '../../components/Footer/Footer';
 
 import './Home.module.css';
 

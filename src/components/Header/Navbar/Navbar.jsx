@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Navbar.module.css"
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -21,21 +22,21 @@ const Navbar = () => {
       <nav className={toggle ? classes.navbar : `${classes.navbar} ${classes.closenav}`}>
         <ul className={classes.links}>
           <li>
-            <a href="">Accueil</a>
+            <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <a href="">Tarifs</a>
+            <NavLink to="/tarifs">Tarifs</NavLink>
           </li>
           <li>
-            <a href="">Nous contacter</a>
+            <NavLink to="/contact">Nous contacter</NavLink>
           </li>
         </ul>
         <ul className={classes.login}>
           <li>
-            <a href="">Se connecter</a>
+            <NavLink to="/connection">Se connecter</NavLink>
           </li>
           <li>
-            <a href="">Se déconnecter</a>
+            <NavLink to="/inscription">S'inscrire</NavLink>
           </li>
         </ul>
       </nav>

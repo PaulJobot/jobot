@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 2.5%;
 }
 
 .infos_title {
@@ -14,14 +15,14 @@
 
 .cards {
     display: flex;
-    margin: 100px 2.5%;
+    margin: 100px 0;
+
 }
 
 @media (max-width: 1000px) {
 
     .cards {
         flex-direction: column;
-        margin: 50px 2.5%;
     }
 
 }

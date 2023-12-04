@@ -1,34 +1,70 @@
 .panel {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 75px 20%;
+    margin: 75px 7.5%;
 }
 
-.panel h2 {
+.panel_content {
+    width: 50%;
+}
+
+.panel_content h2 {
     font-size: 3em;
     font-weight: 400;
     margin: 0;
 }
 
-.panel p {
+.panel_content p {
     margin: 20px 0;
     font-size: 1em;
     color: #A6A6A6;
 }
 
-.panel img {
-    width: 80%;
+.panel_content button {
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 25px;
+    background-color: #75CDD4;
+    cursor: pointer;
+    transition: .2s ease-out
+}
+
+.panel_content button:hover {
+    background: #B4E3E7;
+}
+
+.panel_image {
+    width: 50%;
+}
+
+.panel_image img {
+    position: relative;
+    left: 20%;
 }
 
 @media (max-width: 1000px) {
     .panel {
         margin: 75px 5%;
+        flex-direction: column;
     }
 
-    .panel img {
+    .panel_content {
+        width: auto;
+    }
+
+    .panel_image {
+        width: auto;
+    }
+
+    .panel_image img {
+        position: initial;
+        margin: 20px 0;
         width: 90%;
     }
 }

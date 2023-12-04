@@ -5,9 +5,9 @@ import { faLinkedinIn, faInstagram, faXTwitter } from '@fortawesome/free-brands-
 
 import classes from './Footer.module.css'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className={classes.footer}>
+    <div className={props.color === 1 ? classes.footer_gris : classes.footer}>
         <div className={classes.desc}>
             <img src={logo} alt={logo} />
             <p>L'outil qui envoie et optimise vos<br />candidatures automatiquement.</p>
