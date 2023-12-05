@@ -8,23 +8,6 @@ import './App.css';
 
 function App() {
 
-  const FooterWithColor = () => {
-    let location = useLocation();
-    let footerColor;
-
-    switch (location.pathname) {
-      case "/login":
-      case "/tarifs":
-        footerColor = 0;
-        break;
-      default:
-        footerColor = 1
-    }
-
-    return <Footer color={footerColor} />
-
-  }
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -33,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
-        <FooterWithColor />
+        <Footer />
       </BrowserRouter>
     </div>
   );

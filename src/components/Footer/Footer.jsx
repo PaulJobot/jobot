@@ -1,13 +1,33 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
+
 import logo from '../../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import classes from './Footer.module.css'
 
-const Footer = (props) => {
+const Footer = () => {
+
+  const FooterWithColor = () => {
+    let location = useLocation();
+    let footerColor;
+
+    switch (location.pathname) {
+      case "/login":
+      case "/tarifs":
+        footerColor = 0;
+        break;
+      default:
+        footerColor = 1
+    }
+
+    return footerColor
+
+  }
+
   return (
-    <div className={props.color === 1 ? classes.footer_gris : classes.footer}>
+    <div className={FooterWithColor() === 1 ? classes.footer_gris : classes.footer}>
         <div className={classes.desc}>
             <img src={logo} alt={logo} />
             <p>L'outil qui envoie et optimise vos<br />candidatures automatiquement.</p>

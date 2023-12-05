@@ -14,7 +14,7 @@ const Main = (props) => {
         <p>Jobot vous facilite la recherche d’emploi, envoyez des centaines de candidatures en un click !</p>
         <div className={classes.mail}>
           <input type="text" placeholder="joe@jobot.fr" />
-          <button>Trouver un job</button>
+          <button onClick={props.handleFindJob}>Trouver un job</button>
         </div>
         <button className={classes.btn_down} onClick={props.scroll}>
           <FontAwesomeIcon className={classes.arrow_down} icon={faArrowDownLong} />

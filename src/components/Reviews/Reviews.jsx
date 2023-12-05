@@ -20,7 +20,7 @@ const Reviews = () => {
         else  {
           setCurrentPerson(0)
         }
-      }, 5000);
+      }, 10000);
 
       return () => clearInterval(myInterval)
 
