@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
+  const location = useLocation();
 
   const handleToggle = () => {
     if (toggle) {
@@ -13,6 +14,12 @@ const Navbar = () => {
       setToggle(true)
     }
   }
+
+  useEffect(() => {
+
+    setToggle(false)
+
+  }, [location])
 
   return (
     <React.Fragment>

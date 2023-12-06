@@ -4,7 +4,7 @@ import {listSteps} from '../../data/steps'
 
 import classes from './Steps.module.css'
 
-const Steps = () => {
+const Steps = (props) => {
 
   return (
     <div className={classes.steps}>
@@ -27,7 +27,7 @@ const Steps = () => {
                     )
                 })
             }
-            <button>Trouver un job</button>
+            <button onClick={props.handleFindJob}>Trouver un job</button>
         </div>
     </div>
   )
