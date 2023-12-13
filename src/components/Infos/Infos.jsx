@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../UI/Card';
+import Card from '../UI/Card/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandPointUp, faShoePrints, faEarthAmericas } from '@fortawesome/free-solid-svg-icons'
 

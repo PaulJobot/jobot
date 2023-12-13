@@ -1,5 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Input from '../UI/Input/Input';
 
 import Illustration from '../../assets/home_illustration.png';
 import { faArrowDownLong } from '@fortawesome/free-solid-svg-icons'
@@ -12,10 +13,7 @@ const Main = (props) => {
       <div className={classes.mainleft}>
         <h2><span className={classes.green}>Jobot</span>, la solution qui <span className={classes.purple}>boost votre carrière !</span></h2>
         <p>Jobot vous facilite la recherche d’emploi, envoyez des centaines de candidatures en un click !</p>
-        <div className={classes.mail}>
-          <input type="text" placeholder="joe@jobot.fr" />
-          <button onClick={props.handleFindJob}>Trouver un job</button>
-        </div>
+        <Input actionClick={() => console.log("hello world")} valueButton="Trouver un job" />
         <button className={classes.btn_down} onClick={props.scroll}>
           <FontAwesomeIcon className={classes.arrow_down} icon={faArrowDownLong} />
         </button>
